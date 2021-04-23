@@ -17,7 +17,7 @@ remote_connection = ssh_client.invoke_shell()
 remote_connection.send("show\n")
 
 time.sleep(1)
-output = remote_connection.recv(1000000)
+output = remote_connection.recv(1000000000)
 
 #print(output)
 configs=re.split('\n',''.join(chr(i) for i in output)) #conversion en ascii et les splitter par lignes

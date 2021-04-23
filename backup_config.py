@@ -34,4 +34,4 @@ with open('backup_'+ip_address, 'w') as filehandle:
         filehandle.write('%s\n' % listitem);
 
 
-ssh_client.close
+ssh_client.close()
